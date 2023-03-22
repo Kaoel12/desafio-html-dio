@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio HTML DIO</title>
+</head>
+<body>
+    <h1 id="inicio">Meus primeiros passos com HTML</h1>
+    <hr />
+    <h2>Sumário de aprendizado:</h2>
+    <ul>
+        <strong><li><a href="#primeira-parte">Primeira parte: Entendendo Comunicação Cliente x Server</a></li></strong>
+        <ul>
+            <li><a href="#historia">História da WEB</a></li>
+            <li><a href="#clients">O que são os Clients</a></li>
+            <li><a href="#servers">O que são os Servers</a></li>
+            <li><a href="#linguagens-programacao">Linguagens de Programação na WEB</a></li>
+        </ul>
+        <strong><li><a href="#segunda-parte">Segunda parte: Introdução ao HTML na prática</a></li></strong>
+        <ul>
+            <li><a href="#ferramentas">Ferramentas utilizadas</a></li>
+            <li><a href="#inspetor">Inspetor de elementos</a></li>
+            <li><a href="#estrutura-html">Estrutura básica de um HTML</a></li>
+            <li><a href="#tags">Tags e seus atributos</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#listas">Listas Ordenadas e não Ordenadas</a></li>
+            <li><a href="#links-html">Links</a></li>
+        </ul>
+            <strong><li><a href="#referencias">Referências</a></li></strong>
+    </ul>
+    <hr />
+    <h2>Bootcamp Primeiros passos com tecnologia</h2>
+    <h3>Módulo: Estruturando páginas Web com HTML</h3>
+    <p></p>
+    <hr />
+    <h2 id="primeira-parte">Primeira Parte: Entendendo comunicação Cliente x Servidor</h2>
+    <h3 id="historia">História da WEB</h3>
+    <p>A história da Web se divide em duas outras histórias, a história da computação e a história da internet</p>    <h4>Breve História da computação:</h4>
+    <p>Os primeiros computadores surgiram na década de 1940. O primeiro deles foi o <strong>MARK I</strong> em 1944, ele foi construído no campus de <strong>Harvard.</strong>O próximo computador a surgir foi o <strong>Colossus</strong> em 1946 e logo depois dele veio o considerado pai dos computadores o <strong><i>ENIAC</i></strong> no mesmo ano. Essa foi a geração pioneira</p>
+    <p>A 2<sup>a</sup> geração foi marcada pela transição das válvulas para os transistores e na 3ª Geração houve a introdução dos circuítos integrados</p>
+    <p>A 4<sup>a</sup> Geração foi onde os computadores pessoais foram introduzidos a sociedade, além de avanços significativos como os microprocessadores e a expansão dos circuítos integrados. Foi também onde as grandes empresas do ramo surgiram como por exemplo a <i>Microsoft</i>(1975) e a <i>Apple</i>(1976)</p>
+    <p>A 5ª Geração está sendo marcada pelo avanço da Inteligência artificial e do Bitcoin</p> 
+    <h4>Breve História da internet:</h4>
+    <p>Antes de surgir a internet, se utilizava o telégrafo para enviar mensagens em código Morse, esse aparelho usava a corrente elétrica para enviar pulsos que eram interpretados por meio do código Morse. Na década de 50, durante a guerra fria surgiu a <i>Darpa (Defense Advanced Research Protect Agency)</i>, dentro dessa agência um homem chamado Joseph Carl Robnett Licklider teorizou sobre uma rede galática que pudesse fazer dois computadores se comunicar através dessa rede.</p>
+    <p>Depois de um tempo surge a Arpanet que estabelece um sistema de comunicação em pacotes, enviados um a um e que permitia múltiplos destinos. Em 1969 foi feito a primeira conexão entre dois computadores, e também a primeira queda de conexão.</p>
+    <strong><p>Alguns nomes simportantes na história da internet</p></strong>
+    <ul>
+        <li>Grace Murray Hopper</li>
+        <ul>
+            <li>Criadora da linguagem COBOL</li>
+            <li>Uma das primeiras programadoras do Mark I</li>
+            <li>Difundiu o termo Bug em Computação</li>
+        </ul>
+        <li>Joseph Carl Robnett Licklider</li>
+        <ul>
+            <li>Teoriou sobre uma rede galática de computadores</li>
+            <li>Plantou uma semente sobre a comunicação entre dois pontos através se computadores</li>
+        </ul>
+        <li>Robert E. Kahn</li>
+        <ul>
+            <li>Criador do TCP/IP</li>
+            <li>Apresentou o Primeiro Email</li>
+            <li>Primeira aparição publica da ARPANet</li>
+        </ul>
+        <li>Tim  Berners Lee</li>
+        <ul>
+            <li>Pai da Internet</li>
+            <li>Inventor do WWW</li>
+            <li>Popularizou o Html e o HTTP</li>
+            <li>Foi condecorado cavaleiro pela rainha Elizabeth II</li>
+        </ul>
+        <li>Marc Andreessen</li>
+        <ul>
+            <li>Reinventou o navegador. O Nerscape navigator feito a partir do Mosaic</li>
+            <li>Tornou o navegador Amigável, com recursos gráficos</li>
+            <li>Deteve 90% da internet na época</li>
+        </ul>
+        <li>Bill Gates</li>
+        <ul>
+            <li>Fundador da Microsoft</li>
+            <li>Equipe Microsoft criou o Internet Explorer</li>
+            <li>Tornou acessível a todos o computador, e por consequencia, a internet</li>
+        </ul>
+        <li>Steve Jobs</li>
+        <ul>
+            <li>Fundador da Apple</li>
+            <li>Concorrente direta da Microsoft</li>
+            <li>Popularizou o Smartphone em 2007 com o IPhone</li>
+        </ul>
+    </ul>
+    <a href="#inicio"><- Voltar ao início</a>
+    <h3 id="clients">O que são os Clients</h3>
+    <p>O lado dos Clients da rede é o lado dos usuários, ou seja, é tudo o que o cliente/ usuário consome através da internet, as imagens, os vídeos, todos os arquivos que são gerados pela conexão com a internet. Os usuários acessam via navegadores ou Browsers (programas criados por empresas para executar os arquivos da internet) ou por aplicações Web (Não tem a necessidade de ser instalado, o meio de comunicação dessa aplicações é a rede) através dos dispositivos móveis (tablet ou smartphone) ou do PC</p>
+    <a href="#inicio"><- Voltar ao início</a>
+    <h3 id="servers">O que são os Servers</h3>
+    <p>Um servidor é onde estão armazenados, processados e centraliadas as informações que o cliente vai requerer durante a navegação na internet. Isso pode ser feito através de um único computador ou por vários computadores em um data center a depender do tamanho da empresa e da disponibilidade das informações.</p>
+    <p>Existem alguns tipos de servidores:</p>
+    <ul>
+        <li>Arquivos</li>
+        <li>Segurança</li>
+        <li>Streaming</li>
+        <li>E-mail</li>
+        <li>Web</li>
+    </ul>
+    <a href="#inicio"><- Voltar ao início</a>
+    <h3 id="linguagens-programacao">Linguagens de Programação na WEB</h3>
+    <p>A linguagem de programação no ambiente Web é uma linguagem escrita e formal que especifica um cojunto de instruções e regras usadas para gerar programas (Software). No lado do servidor temos as linguagens que farão as requisições no banco de dados dos servidores, são elas: Java, Ruby, Python, JavaScript, C#, etc. No lado do Cliente a linguagem mais usada é o JavaScript (Html não é linguagem de progrmação, é uma linguagem de marcação como o CSV por exemplo)</p>
+    <a href="#inicio"><- Voltar ao início</a>
+    <hr />
+    <h2 id="segunda-parte">Segunda Parte: Introdução ao HTML na prática</h2>
+    <p>O HTML é o esqueleto de uma página Web, logo é de suma importância que o desenvolvedor saiba desenvolve-la</p>
+    <a href="#inicio"><- Voltar ao início</a>
+    <h3 id="ferramentas">Ferramentas utilizadas</h3>
+    <p>As ferramentas utilizadas serão o navegador Google Chrome e o ambioente de desenvolvimento Visual Studio Code</p>
+    <a href="#inicio"><- Voltar ao início</a>
+    <h3 id="inspetor">Inspetor de elementos</h3>
+    <p>O inspetor de elementos é ativado apertando a tecla F12, nele aparece todas as informações sobre a página em sua estrutura e também a sua parte de estilização (CSS)</p>
+    <a href="#inicio"><- Voltar ao início</a>
+    <h3 id="estrutura-html">Estrutura básica de um HTML</h3>
+    <p>3 Tags são fundamentais em Html, A tag Html para a inicialização do arquivo que o usuário irá ver. A tag Head que é o cabeçalho do arquivo Html e a Tag Body que é onde estará todo o conteúdo da página.</p>
+    <a href="#inicio"><- Voltar ao início</a>
+    <h3 id="tags">Tags e seus atributos</h3>
+    <p>Além das tags que são as espinhas dorsais do arquivos Html, há outras tags para serem analisadam e que são muito mportantes:</p>
+    <p> <ul>
+        <li><i>Tag i cria palavras em itálico.</i></li>
+        <li><strong>Tag strong cria palavras em negrito</strong></li>
+        <li><p>Tag p cria parágrafos</p></li>
+        <li>A tag input cria uma caixa de texto <input /></li>
+        <li>A tag img cria um campo onde se tem imagens <img src="images.png" width="50px"></li>
+    </ul></p>
+    <p>Além das tags tem também os atributos para associá-las</p>
+    <ul>
+        <li>id para identificador do elemento</li>
+        <li>style para estilizar um determinado elemento fora do CSS</li>
+        <li>class para dar uma classe ao elemento</li>
+        <li>type para identificar o tipo de elemento do campo (como um numero ou texto por exemplo)</li>
+        <li>src para fazer a procura de um arquivo, bastante usado para imagens e vídeos</li>
+        <li>width para setar uma largura ao elemento</li>
+    </ul>
+    <a href="#inicio"><- Voltar ao início</a>
+    <h3 id="textos">Textos</h3>
+    <p>Há tags específicas para textos também. Aqui estão algumas delas:</p>
+    <ul>
+        <li><h1>O H1 é o título</h1></li>
+        <li><h2>O H2 é o sub-título</h2></li>
+        <li><h3>O H3 vem abaixo do H2</h3></li>
+        <li><h4>O H4 vem abaixo do H3</h4></li>
+        <li><h5>O H5 vem abaixo do H4</h5></li>
+        <li><h6>O H6 vem abaixo do H5</h6></li>
+        <li><blockquote>O blockquote é uma tag para citação</blockquote></li>
+        <li><mark>Mark é uma tag para marcação na página</mark></li>
+        <li><sup>O Sup é uma tag que deixam as letras acima das demais</sup></li>
+        <li><small>Small é uma tag que deixam as letras pequenas</small></li>
+        <li><u>A tag U deixa o texto sublinhado</u></li>
+        <li>A Tag <abbr title="ABBR TAG">abbr</abbr> define uma abreviação ou um acrônimo</li>
+        <li>A tag <del>DEL</del> deixa o texto "deletado" do documento</li>
+    </ul>
+    <a href="#inicio"><- Voltar ao início</a>
+    <h3 id="listas">Listas Ordenadas e não Ordenadas</h3>
+    <p>Listas Ordenadas:</p>
+    <ol>
+        <li>Um</li>
+        <li>Dois</li>
+        <li>Três</li>
+    </ol>
+    <p>Listas Não Ordenadas:</p>
+    <ul>
+        <li>Um</li>
+        <li>Dois</li>
+        <li>Três</li>
+    </ul>
+    <a href="#inicio"><- Voltar ao início</a>
+    <h3 id="links-html">Links</h3>
+    <p>Faz a ligação de uma página com outra, exemplo da página da DIO:</p>
+    <a href="https://www.dio.me/" target="_blank">Clique Aqui para acessar a página da DIO</a><br>
+    <a href="#inicio"><- Voltar ao início</a>
+    <hr />
+    <h2 id = "referencias">Referências</h2>
+    <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3schools</a><br>
+    <a href="#inicio"><- Voltar ao início</a>
+</body>
+</html>
